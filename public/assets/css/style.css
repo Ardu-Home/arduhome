@@ -1,0 +1,72 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+  /* HeroCards background shadow */
+  .shadow {
+    position: absolute;
+    background-image: linear-gradient(to right, var(--color-ocean), var(--color-wave));
+    border-radius: 24px;
+    rotate: 35deg;
+  
+    width: 260px;
+    top: 200px;
+    height: 400px;
+    filter: blur(150px);
+    animation: shadow-slide infinite 4s linear alternate;
+  }
+  
+  @keyframes shadow-slide {
+    from {
+      background-image: linear-gradient(to right, var(--color-ocean), var(--color-wave));
+
+      right: 460px;
+    }
+    to {
+      background-image: linear-gradient(to right, var(--color-ocean), var(--color-wave));
+
+      right: 160px;
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    .shadow {
+      top: 70px;
+    }
+  
+    @keyframes shadow-slide {
+      from {
+        background-image: linear-gradient(to right, var(--color-ocean), var(--color-wave));
+
+        right: 460px;
+      }
+      to {
+        background-image: linear-gradient(to right, var(--color-ocean), var(--color-wave));
+
+        right: 160px;
+      }
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .shadow {
+      top: 70px;
+      width: 100px;
+      height: 350px;
+      filter: blur(60px);
+    }
+  
+    @keyframes shadow-slide {
+      from {
+        background-image: linear-gradient(to right, var(--color-ocean), var(--color-wave));
+
+        right: 280px;
+      }
+      to {
+        background-image: linear-gradient(to right, var(--color-ocean), var(--color-wave));
+
+        right: 100px;
+      }
+    }
+  }
+  
