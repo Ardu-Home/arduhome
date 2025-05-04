@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import {Inter} from "next/font/google"
 import "@/app/globals.css";
+import "@/public/assets/css/style.css";
+import { ThemeProvider } from "@/components/theme/theme-provider";
+import Header from "@/components/layout/Header";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -23,7 +26,15 @@ export default function RootLayout({
       <body
         className={`${inter.variable} antialiased`}
       >
-        {children}
+        <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
+            <Header/>
+            <div className="container-lg">{children}</div>
+          </ThemeProvider>
       </body>
     </html>
   );
