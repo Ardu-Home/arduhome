@@ -1,4 +1,4 @@
-interface SectionIntroProps{
+export interface SectionIntroProps{
     tag: string;
     title?: string;
     href?: string
@@ -6,4 +6,10 @@ interface SectionIntroProps{
     // onClick: ()=> void;
 }
 
-export default SectionIntroProps
+export interface CategoryCardProps{
+    icon: string;
+    title: string;
+    description: string;
+    background?: boolean;
+    href?: string;
+}
