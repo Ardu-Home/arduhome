@@ -13,3 +13,8 @@ export interface CategoryCardProps{
     background?: boolean;
     href?: string;
 }
+
+// export interface ClientLogoProps{
+//     src: string;
+//     alt: string;
+// }

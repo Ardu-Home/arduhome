@@ -46,10 +46,22 @@ body{
   --color-sidebar-ring: var(--sidebar-ring);
 
   --color-ocean: #5ce1e6;
+  --color-ocean-shadow: rgba(92,225,230,0.1);
   --color-wave: #2f61fa;
   --color-flamingo: #ee437c;
   --color-slate: #757575;
   --container-lg2: 1300px;
+
+  --animate-infinite-scroll: infinite-scroll 5s linear infinite alternate;
+
+  @keyframes infinite-scroll{
+    0%: {
+      transform: translateX(0%);
+    }
+    100%{
+      transform: translateX(-50%)
+    }
+  }
 }
 
 :root {
@@ -142,6 +154,9 @@ body{
   .text-gradient-primary{
    @apply inline bg-gradient-to-r from-[#61DAFB] via-[#1fc0f1] to-[#03a3d7] text-transparent bg-clip-text
   }
+  .card-shadow{
+    box-shadow: 0 1.628vw 4.557vw var(--color-ocean-shadow);
+  }
   /* ==================== Display ==================== */
   .container-lg{
     @apply m-auto max-w-lg2 px-5;
@@ -149,4 +164,8 @@ body{
   .flex-between{
     @apply flex justify-between items-center
   }
+  .flex-center{
+    @apply flex justify-center items-center
+  }
+  
 }

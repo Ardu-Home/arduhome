@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { SectionIntroProps } from "@/types/SectionIntro";
+import { SectionIntroProps } from "@/types/common.types.";
 
 export const SectionIntro: React.FC<SectionIntroProps> = ({
   tag,

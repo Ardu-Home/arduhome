@@ -2,6 +2,7 @@ import { SectionIntro } from "@/components/common/SectionIntro";
 import React from "react";
 import { category } from "@/data/category";
 import CategoryCard from "@/components/common/CategoryCard";
+import ClientLogo from "@/components/common/ClientLogo";
 
 const AboutUs: React.FC = () => {
   return (
@@ -11,7 +12,7 @@ const AboutUs: React.FC = () => {
           tag="About Us"
           title="Innovating the Future with AI and Robotics"
         />
-        <div className="grid lg:grid-cols-3 space-x-28">
+        <div className="grid lg:grid-cols-3 gap-16">
           {category.map((categorie) => (
             <CategoryCard
               key={categorie.id}
@@ -20,6 +21,9 @@ const AboutUs: React.FC = () => {
               description={categorie.description}
             />
           ))}
+        </div>
+        <div>
+            <ClientLogo />
         </div>
       </section>
     </>
