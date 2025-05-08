@@ -1,8 +1,9 @@
-import { CategoryCardProps } from "@/types/common.types.";
+import { CategoryItem } from "@/types/common.types.";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import React from "react";
 
-const CategoryCard: React.FC<CategoryCardProps> = ({
+const CategoryCard: React.FC<CategoryItem> = ({
+  id,
   icon,
   title,
   description,

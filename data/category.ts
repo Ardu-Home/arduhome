@@ -1,4 +1,6 @@
-export const category = [
+import { CategoryItem } from "@/types/common.types.";
+
+export const category: CategoryItem[]  = [
     {
         id: 1,
         icon: "hugeicons:champion",

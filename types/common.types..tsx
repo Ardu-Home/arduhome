@@ -6,7 +6,8 @@ export interface SectionIntroProps{
     // onClick: ()=> void;
 }
 
-export interface CategoryCardProps{
+export interface CategoryItem{
+    id?: number;
     icon: string;
     title: string;
     description: string;
@@ -18,3 +19,8 @@ export interface CategoryCardProps{
 //     src: string;
 //     alt: string;
 // }
+
+export interface SocialMidiaItem{
+    icon: string;
+    href?: string;
+}

@@ -15,7 +15,6 @@ const AboutUs: React.FC = () => {
         <div className="grid lg:grid-cols-3 gap-16">
           {category.map((categorie) => (
             <CategoryCard
-              key={categorie.id}
               icon={categorie.icon}
               title={categorie.title}
               description={categorie.description}

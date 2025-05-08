@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import HeroCard from "@/components/pages/main/HeroSection/HeroCard";
+import {HeroCards} from "@/components/pages/main/HeroSection/HeroCards";
 import { SectionIntro } from "@/components/common/SectionIntro";
 
 export const HeroSection = () => {
@@ -28,7 +28,7 @@ export const HeroSection = () => {
         </div>
         {/* Hero cards sections */}
         <div className="z-10">
-          <HeroCard />
+          <HeroCards />
         </div>
         {/* Shadow effect */}
         <div className="shadow"></div>
