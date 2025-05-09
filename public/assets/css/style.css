@@ -49,9 +49,10 @@ html {
   
   @media (max-width: 768px) {
     .shadow {
-      top: 70px;
-      width: 100px;
-      height: 350px;
+      position: absolute;
+      top: 150px;
+      width: 200px;
+      height: 200px;
       filter: blur(60px);
     }
   
@@ -59,12 +60,12 @@ html {
       from {
         background-image: linear-gradient(to right, var(--color-ocean), var(--color-wave));
 
-        right: 280px;
+        right: 90vw;
       }
       to {
         background-image: linear-gradient(to right, var(--color-ocean), var(--color-wave));
 
-        right: 100px;
+        right: -70vw;
       }
     }
   }

@@ -6,7 +6,7 @@ export const HeroSection = () => {
   return (
     <>
       <section className="relative grid lg:grid-cols-2 place-items-center py-20 md:py-32 gap-10">
-        <div className="text-center lg:text-start space-y-6">
+        <div className="text-center lg:text-start mt-12 md:mt-0 space-y-6 z-30">
           <div className="text-5xl md:text-6xl font-bold flex flex-col gap-4">
             <SectionIntro tag="AI & Robotic Engineering"/>
             <h1 className="inline leading-16">

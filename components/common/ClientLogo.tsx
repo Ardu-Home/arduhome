@@ -12,13 +12,32 @@ const ClientLogo = () => {
     <>
       <Swiper
         modules={[Autoplay]}
-        spaceBetween={50}
+        spaceBetween={40}
         slidesPerView={4}
         autoplay={{
           delay: 2500,
           disableOnInteraction: false,
         }}
         loop={true}
+        breakpoints={{
+          1024: {
+            slidesPerView: 4,  // Exibe 4 logos por vez
+            spaceBetween: 40,  // Espaço de 50px entre os slides
+          },
+          // Para tablets
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+          // Para telas pequenas (smartphones)
+          480: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          0: {
+            slidesPerView: 1
+          }
+        }}
       >
         {clientLogo.map((client, index) => (
           <SwiperSlide key={index} className="py-10 drop-shadow-xl shadow-black/10 dark:shadow-white/10">

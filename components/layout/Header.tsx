@@ -8,7 +8,7 @@ import { navlinks } from '@/data/header';
 const Header = () => {
     return (
         <>
-            <div className='border-b-1 bg-background fixed w-full z-20'>
+            <div className='border-b-1 bg-background fixed w-full z-50'>
                 <div className='py-4 flex-between container-lg '>
                     <Image src="/assets/image/logo/Logo-White.svg" width={60} height={60} alt='Logotipo - Ardu Home' />
                     <div className="hidden md:visible md:flex items-center gap-8">

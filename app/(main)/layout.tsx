@@ -22,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br" suppressHydrationWarning>
-      <body className={`antialiased`}>
+      <body className={`antialiased overflow-x-hidden`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
@@ -30,7 +30,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Header />
-          <div className="container-lg">{children}</div>
+          <div className="container-lg overflow-x-hidden md:overflow-visible">{children}</div>
         </ThemeProvider>
       </body>
     </html>
