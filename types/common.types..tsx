@@ -27,3 +27,10 @@ export interface SocialMidiaItem{
     icon: string;
     href?: string;
 }
+
+export interface PortfoItem{
+    id: string;
+    icon: string;
+    title: string;
+    description: string;
+}

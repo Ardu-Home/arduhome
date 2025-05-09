@@ -170,5 +170,9 @@ body{
   .flex-center{
     @apply flex justify-center items-center
   }
+  /* ==================== Display ==================== */
+  .section{
+    @apply space-y-16 pb-20 md:pb-32
+  }
   
 }

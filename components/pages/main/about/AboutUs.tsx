@@ -7,7 +7,7 @@ import { category } from "@/data/category";
 const AboutUs: React.FC = () => {
   return (
     <>
-      <section className="space-y-16">
+      <section className="section">
         <SectionIntro
           tag="About Us"
           title="Innovating the Future with AI and Robotics"
