@@ -1,15 +1,14 @@
 import type { Metadata } from "next";
-import {Inter} from "next/font/google"
 import "@/app/globals.css";
 import "@/public/assets/css/style.css";
 import { ThemeProvider } from "@/components/theme/theme-provider";
 import Header from "@/components/layout/Header";
 
-const inter = Inter({
-  subsets: ["latin"],
-  weight: ["400", "500", "700", "800", "900"],
-  variable: "--font-inter",
-});
+// const inter = Inter({
+//   subsets: ["latin"],
+//   weight: ["400", "500", "700", "800", "900"],
+//   variable: "--font-inter",
+// });
 
 export const metadata: Metadata = {
   title: "Ardu Home",
@@ -22,19 +21,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-br">
-      <body
-        className={`${inter.variable} antialiased`}
-      >
+    <html lang="pt-br" suppressHydrationWarning>
+      <body className={`antialiased`}>
         <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
-          >
-            <Header/>
-            <div className="container-lg">{children}</div>
-          </ThemeProvider>
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <Header />
+          <div className="container-lg">{children}</div>
+        </ThemeProvider>
       </body>
     </html>
   );

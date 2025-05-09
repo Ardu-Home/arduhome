@@ -17,7 +17,7 @@ export const HeroCards = () => {
   return (
     <div className="hidden lg:flex flex-row flex-wrap gap-8 relative w-[700px] h-[500px]">
       {/* Testimonial */}
-      <Card className="absolute w-[340px] -top-[15px] drop-shadow-xl shadow-black/10 dark:shadow-white/10 gap-0">
+      <Card className="absolute w-[340px] box-shadow gap-0">
         <CardHeader className="flex flex-row items-center gap-4 pb-2">
           <Avatar>
             <AvatarImage alt="" src="#" />
@@ -33,7 +33,7 @@ export const HeroCards = () => {
       </Card>
 
       {/* Team */}
-      <Card className="absolute right-[20px] top-4 w-80 flex flex-col justify-center items-center drop-shadow-xl shadow-black/10 dark:shadow-white/10">
+      <Card className="absolute right-[20px] top-12 w-80 flex flex-col justify-center items-center box-shadow">
         <CardHeader className="mt-6 flex justify-center items-center">
           <img
             src="/assets/image/logo/logo-blue.png"
@@ -59,6 +59,7 @@ export const HeroCards = () => {
           <div>
             {socialmidia.map((social) => (
               <a
+                key={social.id}
                 rel="noreferrer noopener"
                 href={social.href}
                 target="_blank"
@@ -74,7 +75,7 @@ export const HeroCards = () => {
       </Card>
 
       {/* Pricing */}
-      <Card className="absolute top-[150px] left-[50px] w-72  drop-shadow-xl shadow-black/10 dark:shadow-white/10">
+      <Card className="absolute top-[150px] left-[50px] w-72  box-shadow">
         <CardHeader>
           <CardTitle className="flex justify-end mb-2">
             <Badge variant="secondary" className="text-sm text-primary">
@@ -108,7 +109,7 @@ export const HeroCards = () => {
       </Card>
 
       {/* Service */}
-      <Card className="absolute w-[350px] -right-[10px] bottom-[35px]  drop-shadow-xl shadow-black/10 dark:shadow-white/10">
+      <Card className="absolute w-[340px] -right-[0px] bottom-[35px]  box-shadow">
         <CardHeader className="space-y-1 flex md:flex-row justify-start items-start gap-4">
           <div className="mt-1 bg-primary/20 p-1 rounded-2xl">
             {/* <LightBulbIcon /> */}

@@ -46,7 +46,7 @@ body{
   --color-sidebar-ring: var(--sidebar-ring);
 
   --color-ocean: #5ce1e6;
-  --color-ocean-shadow: rgba(92,225,230,0.1);
+  --color-ocean-shadow: rgba(47, 97, 250, 0.040);
   --color-wave: #2f61fa;
   --color-flamingo: #ee437c;
   --color-slate: #757575;
@@ -155,7 +155,10 @@ body{
    @apply inline bg-gradient-to-r from-[#61DAFB] via-[#1fc0f1] to-[#03a3d7] text-transparent bg-clip-text
   }
   .card-shadow{
-    box-shadow: 0 1.628vw 4.557vw var(--color-ocean-shadow);
+    box-shadow: 0 0px 50px 10px var(--color-ocean-shadow);
+  }
+  .box-shadow{
+    @apply drop-shadow-xl shadow-black/10 dark:shadow-white/10
   }
   /* ==================== Display ==================== */
   .container-lg{

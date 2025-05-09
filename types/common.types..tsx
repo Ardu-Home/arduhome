@@ -15,12 +15,15 @@ export interface CategoryItem{
     href?: string;
 }
 
-// export interface ClientLogoProps{
-//     src: string;
-//     alt: string;
-// }
+export interface NavLinkItem{
+    id: string;
+    link: string;
+    href: string;
+    icon: string;
+}
 
 export interface SocialMidiaItem{
+    id: string;
     icon: string;
     href?: string;
 }

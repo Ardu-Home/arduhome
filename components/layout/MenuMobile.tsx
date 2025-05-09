@@ -7,10 +7,10 @@ import {
 } from "@/components/ui/sheet"
 import { Icon } from "@iconify/react";
 import { Button } from '../ui/button';
-import { navlinks } from '@/data/header';
 import Link from 'next/link';
+import { navlinks } from '@/data/header';
 
-export default function MenuMobile() {
+const MenuMobile = () => {
     return (
         <div className='md:hidden'>
             <Sheet>
@@ -37,3 +37,5 @@ export default function MenuMobile() {
         </div>
     )
 }
+
+export default MenuMobile

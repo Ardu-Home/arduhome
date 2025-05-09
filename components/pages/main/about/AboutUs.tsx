@@ -1,8 +1,8 @@
 import { SectionIntro } from "@/components/common/SectionIntro";
 import React from "react";
-import { category } from "@/data/category";
 import CategoryCard from "@/components/common/CategoryCard";
 import ClientLogo from "@/components/common/ClientLogo";
+import { category } from "@/data/category";
 
 const AboutUs: React.FC = () => {
   return (
@@ -15,6 +15,7 @@ const AboutUs: React.FC = () => {
         <div className="grid lg:grid-cols-3 gap-16">
           {category.map((categorie) => (
             <CategoryCard
+              key={categorie.id}
               icon={categorie.icon}
               title={categorie.title}
               description={categorie.description}
@@ -22,7 +23,7 @@ const AboutUs: React.FC = () => {
           ))}
         </div>
         <div>
-            <ClientLogo />
+          <ClientLogo />
         </div>
       </section>
     </>

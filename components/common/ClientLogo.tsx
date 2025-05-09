@@ -2,10 +2,10 @@
 
 import Image from "next/image";
 import React from "react";
-import { clientLogo } from "@/data/client";
 import "swiper/css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
+import { clientLogo } from "@/data/client";
 
 const ClientLogo = () => {
   return (
@@ -19,10 +19,9 @@ const ClientLogo = () => {
           disableOnInteraction: false,
         }}
         loop={true}
-        className="py-10"
       >
         {clientLogo.map((client, index) => (
-          <SwiperSlide key={index} className="py-10">
+          <SwiperSlide key={index} className="py-10 drop-shadow-xl shadow-black/10 dark:shadow-white/10">
             <div className="min-w-[260px] h-[140px] bg-background rounded-2xl p-4 flex-center card-shadow">
               <Image
                 src={client.src}

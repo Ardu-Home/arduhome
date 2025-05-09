@@ -1,21 +1,21 @@
 import Image from 'next/image'
 import React from 'react'
-import { navlinks } from "@/data/header";
 import { Button } from '../ui/button';
 import MenuMobile from "@/components/layout/MenuMobile"
 import Link from 'next/link';
+import { navlinks } from '@/data/header';
 
-export default function Header() {
+const Header = () => {
     return (
         <>
-            <div className='border-b-1'>
-                <div className=' dark:bg-background py-4 flex-between container-lg '>
+            <div className='border-b-1 bg-background fixed w-full z-20'>
+                <div className='py-4 flex-between container-lg '>
                     <Image src="/assets/image/logo/Logo-White.svg" width={60} height={60} alt='Logotipo - Ardu Home' />
                     <div className="hidden md:visible md:flex items-center gap-8">
                         <ul className="flex space-x-2">
                             {navlinks.map((link) => (
-                                <Button asChild variant={'ghost'} key={link.id} href={link.href} className="text-white px-6 py-5 text-base">
-                                    <Link>
+                                <Button asChild variant={'ghost'} key={link.id} className="text-white px-6 py-5 text-base">
+                                    <Link href={link.href}>
                                         {link.link}
                                     </Link>
                                 </Button>
@@ -30,3 +30,5 @@ export default function Header() {
         </>
     )
 }
+
+export default Header
